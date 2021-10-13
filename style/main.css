@@ -1597,7 +1597,15 @@ html[dir="ltr"] .bt_input {
 .copyrights img{
   margin-inline-start: 5px;
 }
-
+@media (max-width: 767px){
+  .copyrights{
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyrights p {
+    margin-bottom: 5px;
+  }
+}
 /* ~~~~~~~~~~~~~~~end copyrights~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
