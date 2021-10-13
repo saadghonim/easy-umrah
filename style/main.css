@@ -826,6 +826,9 @@ html[dir="ltr"] .navbar_{
   .btn_about{
     margin-bottom: 40px;
   }
+  .about_us_parant .title_about{
+    text-align: center;
+  }
 }
 /* ~~~~~~~~~~~~~~~end about_us~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -1176,8 +1179,55 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
 }
 .anc_gallery{
   display: flex;
+  position: relative;
+  overflow: hidden;
   
 }
+.anc_gallery:before {
+  background: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .8s ease 0s;
+  z-index: 9;
+}
+
+.anc_gallery::after {
+  background: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  transition: all .8s ease 0s;
+  z-index: 9;
+}
+
+.anc_gallery:hover::after {
+  bottom: 50%;
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  top: 50%;
+}
+
+.anc_gallery:hover::before {
+  left: 50%;
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  right: 50%;
+}
+
 .anc_gallery img{
   max-width: 100%;
 }
