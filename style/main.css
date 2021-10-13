@@ -1660,7 +1660,7 @@ html[dir="ltr"] .bt_input {
 
 
 
-.preloader-sa {
+/* .preloader-sa {
   position: fixed;
   top: 0;
   left: 0;
@@ -1675,5 +1675,5 @@ html[dir="ltr"] .bt_input {
 
 .preloader-sa img {
   width: auto;
-}
+} */
 
