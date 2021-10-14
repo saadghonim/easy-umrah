@@ -631,6 +631,7 @@ html[dir="ltr"] .navbar_{
   padding: 0 30px;
   border: none;
   width: 95%;
+  min-width: 100%;
 }
 .input_search:focus{
   outline: 0;
