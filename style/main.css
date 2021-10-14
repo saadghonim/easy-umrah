@@ -218,6 +218,10 @@ header{
 .drop_user, .drop_lang{
   left: -39px;
 }
+html[dir="ltr"] .drop_lang {left:-7px}
+html[dir="rtl"] .drop_lang {left:-32px}
+html[dir="ltr"] .drop_user {left:-30px}
+html[dir="rtl"] .drop_user {left:-45px}
 .ul_drop{
   left: -48px;
   width: 160px;
@@ -331,6 +335,8 @@ header{
   html[dir="ltr"] .navbar_{
     left: 0;
   }
+
+
   .logo img{
     max-width: 85px;
   }
@@ -631,7 +637,6 @@ html[dir="ltr"] .navbar_{
   padding: 0 30px;
   border: none;
   width: 95%;
-  min-width: 100%;
 }
 .input_search:focus{
   outline: 0;
@@ -734,6 +739,9 @@ html[dir="ltr"] .navbar_{
     width: 85%;
     margin-bottom: 20px;
     text-align: center;
+  }
+  .input_search{
+    min-width: 100%;
   }
 }
 @media(max-width:567px){
