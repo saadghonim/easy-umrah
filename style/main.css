@@ -361,7 +361,7 @@ header{
   font-size: 15px;
 }
 .bt_bars{
-  display: block;
+  display: flex;
 }
 .fa-times{
   display: block;
@@ -433,6 +433,7 @@ html[dir="ltr"] .drop_user{
   display: block;
 }
 .big_banner img{
+  width: 100%;
   max-width: 100%;
 }
 .big_banner .img_choose{
@@ -932,6 +933,7 @@ html[dir="ltr"] .navbar_{
   margin-bottom: 130px;
 }
 .anc_banner_sm img{
+  width: 100%;
   max-width: 100%;
 }
 @media(max-width:767px){
@@ -1324,6 +1326,7 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
 
 /* ~~~~~~~~~~~~~~~start map~~~~~~~~~~~~~~~~~~~~~~ */
 .google_map img{
+  width: 100%;
   max-width: 100%;
 }
 /* ~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~~~~ */
