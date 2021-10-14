@@ -418,6 +418,9 @@ html[dir="ltr"] .fa-times{
 .anc_lang{
   display: block;
 }
+html[dir="ltr"] .drop_user{
+  left: -65px;
+}
 }
 /* ~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -456,9 +459,14 @@ html[dir="ltr"] .fa-times{
 html[dir="ltr"] .div_img{
   flex-direction: row-reverse;
 }
+
 .banner_btn {
   width: 212px;
   height: 56px;
+  font-size: 18px;
+  font-family: "Tajawal";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   background-image: -moz-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
   background-image: -webkit-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
   background-image: -ms-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
@@ -494,6 +502,7 @@ html[dir="ltr"] .div_img{
   .banner_btn {
     width: 200px;
     height: 50px;
+    font-size: 16px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -734,6 +743,10 @@ html[dir="ltr"] .navbar_{
   .title_search {
     font-size: 22px;
   }
+  .btn_search{
+    width: 120px;
+    height: 40px;
+  }
 }
 
 /* ~~~~~~~~~~~~~~~end search~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -820,12 +833,19 @@ html[dir="ltr"] .navbar_{
   }
   .title_about {
     font-size: 25px;
-    padding: 20px 0 30px;
+    padding: 20px 0 15px;
 
   }
   .btn_about{
     margin-bottom: 40px;
-  }
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
   .about_us_parant .title_about{
     text-align: center;
   }
