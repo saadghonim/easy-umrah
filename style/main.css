@@ -1375,7 +1375,7 @@ footer .down_f {
   position: relative;
   display: flex;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 } 
 footer .down_f:hover{
   text-decoration: none;
@@ -1677,6 +1677,7 @@ html[dir="ltr"] .bt_input {
   }
   .copyrights p {
     margin-bottom: 5px;
+    text-align: center;
   }
 }
 /* ~~~~~~~~~~~~~~~end copyrights~~~~~~~~~~~~~~~~~~~~~~~~ */
