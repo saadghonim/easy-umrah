@@ -58,35 +58,16 @@ $('.offers .owl-carousel').owlCarousel({
 
 /* ~~~~~~~~~~~~~~~end offers~~~~~~~~~~~~~~~~~~~~~~ */
 
-
-   
-  
-
-    /* Works xs slider */
-    // $(".gallery_parant").ticker({
-    //   item:'anc_gallery',
-    // });
-
-
-
-
-
-  //   $('.marquee').marquee({
-  //     duration: 10000,
-  //     gap: 15,
-  //     delayBeforeStart: 0,
-  //     direction: 'right',
-  //     duplicated: true,
-  //     pauseOnHover: true
-  // });
-
   $(".input_pickr").flatpickr();
 
   $('.input_select').selectpicker();
 
-  $(window).load(function() {
-    $(".preloader-sa ").fadeOut();
-  });
+
+
+  $( window ).on( "load", function() {
+    $(".preloader-sa").fadeOut();
+});
+
   
 });
 
