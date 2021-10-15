@@ -434,13 +434,20 @@ html[dir="ltr"] .drop_user{
 /* ~~~~~~~~~~~~~~~start big_banner~~~~~~~~~~~~~~~~~~~~~~ */
 .big_banner{
   position: relative;
+
 }
 .big_banner .anc-img{
   display: block;
+  position: relative;
+  padding-bottom: 57.14285714285714%;
 }
-.big_banner img{
+.big_banner .img-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  max-width: 100%;
+  object-fit: cover;
 }
 .big_banner .img_choose{
   max-width: 100%;
@@ -887,7 +894,16 @@ html[dir="ltr"] .navbar_{
 .anc_ser {
   position: relative;
   display: inline-block;
+  padding-bottom: 152.1739130434783%;
 
+}
+.anc_ser img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .anc_ser h5{
   position: absolute;
@@ -1211,7 +1227,16 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
   display: flex;
   position: relative;
   overflow: hidden;
+  padding-bottom: 99.61977186311787%;
   
+}
+.anc_gallery img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .anc_gallery:before {
   background: rgba(255, 255, 255, 0.5);
