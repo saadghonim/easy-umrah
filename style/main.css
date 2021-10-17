@@ -489,10 +489,16 @@ html[dir="ltr"] .div_img{
   -moz-border-radius: 28px;
   -ms-border-radius: 28px;
   -o-border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .banner_btn {
   animation: pulse 1s infinite;
   -webkit-animation: pulse 1s infinite;
+}
+.banner_btn:hover{
+  color: #ffffff;
 }
 
 @keyframes pulse {
@@ -818,21 +824,21 @@ html[dir="ltr"] .navbar_{
   -moz-border-radius: 23px;
   -ms-border-radius: 23px;
   -o-border-radius: 23px;
-  background-image: -moz-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
+  background-image: linear-gradient(to right, #cc7237 0%, #e3ba24 100%);
+  background-size: 200% auto;
+  text-transform: capitalize;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -ms-transition: .5s;
   -o-transition: .5s;
-  text-transform: capitalize;
 }
 .btn_about:hover{
-  background-image: -moz-linear-gradient( 0deg, rgb(227,186,36) 0%, rgb(204,114,55) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(227,186,36) 0%, rgb(204,114,55) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(227,186,36) 0%, rgb(204,114,55) 100%);
+  background-position: right ;
+  background-image: linear-gradient(to left, #cc7237 0%, #e3ba24 75%);
+
 }
+
 @media(max-width:767px){
   .about_us{
     flex-direction: column;
@@ -895,6 +901,7 @@ html[dir="ltr"] .navbar_{
   position: relative;
   display: inline-block;
   padding-bottom: 152.1739130434783%;
+  overflow: hidden;
 
 }
 .anc_ser img{
@@ -904,6 +911,18 @@ html[dir="ltr"] .navbar_{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.anc_ser img:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .anc_ser h5{
   position: absolute;
@@ -1228,8 +1247,9 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
   position: relative;
   overflow: hidden;
   padding-bottom: 99.61977186311787%;
-  
+
 }
+
 .anc_gallery img{
   position: absolute;
   top: 0;
