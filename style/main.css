@@ -1405,6 +1405,11 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
 .gm-ui-hover-effect{
   display: none!important;
 }
+@media(max-width:767px){
+  .google_map {
+    height: 230px;
+  }
+}
 /* ~~~~~~~~~~~~~~~end map~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~start footer~~~~~~~~~~~~~~~~~~~~~~ */
