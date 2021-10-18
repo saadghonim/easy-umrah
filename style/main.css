@@ -71,7 +71,7 @@ direction: ltr;
 
 body {
 font-family: "Tajawal";
-overflow-x: hidden;
+/* overflow-x: hidden; */
 }
 
 .ul_gh {
@@ -594,6 +594,7 @@ html[dir="ltr"] .div_img{
   background-image: url("../images/search.png");
   background-size: cover;
   padding: 50px 0;
+  overflow: hidden;
 }
 .title_search{
   font-size: 26px;
@@ -625,10 +626,10 @@ html[dir="ltr"] .div_img{
   font-size: 16px;
 }
 html[dir="ltr"] .div_input i{
-  right: 30px;
+  right: 45px;
 }
 html[dir="rtl"] .div_input i{
-  left: 30px;
+  left: 45px;
 }
 .div_input .fa-angle-down{
   font-size: 14px;
@@ -770,6 +771,12 @@ html[dir="ltr"] .navbar_{
   .input_search{
     min-width: 100%;
   }
+  html[dir="ltr"] .div_input i{
+    right: 30px;
+  }
+  html[dir="rtl"] .div_input i{
+    left: 30px;
+  }
 }
 @media(max-width:567px){
   .div_input{
@@ -848,7 +855,7 @@ html[dir="ltr"] .navbar_{
   -o-transition: .5s;
 }
 .btn_about:hover{
-  background-image: linear-gradient(to left, #cc7237 0%, #e3ba24 65%);
+  background-image: linear-gradient(to left, #cc7237 0%, #e3ba24 6%);
 
 }
 
