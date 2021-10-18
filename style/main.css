@@ -594,7 +594,7 @@ html[dir="ltr"] .div_img{
   background-image: url("../images/search.png");
   background-size: cover;
   padding: 50px 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .title_search{
   font-size: 26px;
@@ -770,12 +770,17 @@ html[dir="ltr"] .navbar_{
   }
   .input_search{
     min-width: 100%;
+    padding: 0 25px;
   }
   html[dir="ltr"] .div_input i{
     right: 30px;
   }
   html[dir="rtl"] .div_input i{
     left: 30px;
+  }
+  .div_input i{
+    display: none;
+
   }
 }
 @media(max-width:567px){
