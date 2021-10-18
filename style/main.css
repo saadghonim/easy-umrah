@@ -860,7 +860,7 @@ html[dir="ltr"] .navbar_{
   -o-transition: .5s;
 }
 .btn_about:hover{
-  background-image: linear-gradient(to left, #cc7237 0%, #e3ba24 6%);
+  background-image: linear-gradient(to left, #cc7237 0%, #e3ba24 80%);
 
 }
 
