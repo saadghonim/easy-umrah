@@ -64,10 +64,10 @@ $('.offers .owl-carousel').owlCarousel({
 
 
 
-  $( window ).on( "load", function() {
-    $(".preloader-sa").fadeOut();
-});
 
   
 });
 
+$(window).on( "load", function() {
+  $(".preloader-sa").fadeOut();
+});
