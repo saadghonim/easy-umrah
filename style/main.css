@@ -1371,11 +1371,41 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
 /* ~~~~~~~~~~~~~~~end news~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~start map~~~~~~~~~~~~~~~~~~~~~~ */
-.google_map img{
+.google_map {
   width: 100%;
   max-width: 100%;
+  height: 280px;
 }
-/* ~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~~~~ */
+#map{
+  width: 100%;
+  height: 100%;
+}
+.gm-style .gm-style-iw-c{
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+.gm-style .gm-style-iw{
+  font-size: 21px;
+  font-family: "Tajawal";
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+
+}
+
+.gm-style-iw-c{
+  padding: 0;
+}
+.gm-style-iw-d{
+  overflow:hidden!important;
+}
+.gm-style .gm-style-iw-t::after{
+  display: none;
+}
+.gm-ui-hover-effect{
+  display: none!important;
+}
+/* ~~~~~~~~~~~~~~~end map~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~start footer~~~~~~~~~~~~~~~~~~~~~~ */
 footer {
@@ -1727,8 +1757,6 @@ html[dir="ltr"] .bt_input {
   }
 }
 /* ~~~~~~~~~~~~~~~end copyrights~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
 
 .preloader-sa {
   position: fixed;

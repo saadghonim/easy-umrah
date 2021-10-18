@@ -62,12 +62,43 @@ $('.offers .owl-carousel').owlCarousel({
 
   $('.input_select').selectpicker();
 
-
+  $(window).on( "load", function() {
+    $(".preloader-sa").fadeOut();
+  });
+  
 
 
   
 });
 
-$(window).on( "load", function() {
-  $(".preloader-sa").fadeOut();
-});
+// google map
+
+let map;
+let data_shal = document.getElementById("map").dataset;
+
+function initMap() {
+  const myLatLng = { lat: parseFloat(data_shal.lat), lng: parseFloat(data_shal.lng)  };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+  const infowindow = new google.maps.InfoWindow({
+    content: data_shal.title,
+
+  });
+
+  const marker = new google.maps.Marker({
+    position: myLatLng,
+    map,
+    icon:  'images/pin.png'
+
+  });
+  window.addEventListener('load', function() {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+
+})
+
+} 
