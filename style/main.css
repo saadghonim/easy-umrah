@@ -474,6 +474,35 @@ html[dir="ltr"] .drop_user{
 html[dir="ltr"] .div_img{
   flex-direction: row-reverse;
 }
+.text_big{
+  position: absolute;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  top:25%;
+}
+.text_big h4{
+  font-size: 48px;
+  font-family: "Tajawal";
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 100%;
+
+
+}
+.text_big h3{
+  font-size: 36px;
+  font-family: "Tajawal";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  width: 100%;
+}
 
 .banner_btn {
   width: 212px;
@@ -553,14 +582,25 @@ html[dir="ltr"] .div_img{
 .div_img_parant {
   top: 70%;
 }
+.text_big{
+  top:25%;
+}
+.text_big h4{
+  font-size: 26px;
+  margin-bottom: 5px;
 
+}
+.text_big h3{
+  font-size: 20px;
+
+}
 }
 @media(max-width:576px){
   .big_banner .img_choose{
     width: 75px;
   }
   .div_img{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .banner_btn {
     width: 120px;
@@ -584,6 +624,18 @@ html[dir="ltr"] .div_img{
   100% {
       box-shadow: 0 0 0 0 rgba(3, 168, 124, 0);
   }
+}
+.text_big{
+  top: 24%;
+}
+.text_big h4{
+  font-size: 13px;
+  margin-bottom: 5px;
+
+}
+.text_big h3{
+  font-size: 12px;
+
 }
 }
 
