@@ -423,7 +423,7 @@ html[dir="rtl"] .drop_user {left:-43px}
   color: rgb(146, 146, 146);
 }
 .navbar_ .social-media{
-  display: block;
+  display: flex;
 }
 html[dir="rtl"] .navbar_ .social-media .social{
   margin: 0 10px;
@@ -635,6 +635,7 @@ html[dir="ltr"] .drop_user{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
 .div_img_parant {
   top: 60%;
 }
@@ -653,7 +654,7 @@ html[dir="ltr"] .drop_user{
 }
 @media(max-width:576px){
   .div_img{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .big_banner .img_choose{
     width: 85%;
@@ -668,7 +669,7 @@ html[dir="ltr"] .drop_user{
     -o-border-radius: 18px;
 }
 .div_img_parant {
-  top: 53%;
+  top: 50%;
 }
 @keyframes pulse {
   0% {
@@ -1041,12 +1042,14 @@ html[dir="ltr"] .navbar_{
   gap: 20px;
   margin-bottom: 100px;
 }
-.anc_ser {
+.div_img_s {
   position: relative;
-  display: inline-block;
   padding-bottom: 152.1739130434783%;
   overflow: hidden;
 
+}
+.anc_ser{
+  position: relative;
 }
 .anc_ser img{
   position: absolute;
@@ -1098,13 +1101,11 @@ html[dir="ltr"] .navbar_{
 @media(max-width:767px){
   .banners_services{
     display: grid;
-    grid-template-areas:
-    "anc_ser anc_ser" 
-    "anc_ser anc_ser"
-    "anc_ser anc_ser" ;
+    grid-template-areas:unset ;
     gap: 15px;
     overflow: hidden;
     margin-bottom: 40px;
+    grid-template-columns: 1fr 1fr;
   }
   .anc_ser h5 {
     font-size: 16px;
@@ -1116,9 +1117,12 @@ html[dir="ltr"] .navbar_{
     -ms-transform:translate(0);
     -o-transform:translate(0);
     -webkit-transform:translate(0);
+    margin-bottom: 15px;
 }
 
-  
+.div_img_s{
+  margin-bottom: 10px;
+}
   .anc_ser{
     overflow:visible;
   }
@@ -1129,9 +1133,7 @@ html[dir="ltr"] .navbar_{
     -ms-transform: none;
     -o-transform: none;
 }
-  .div_img_s{
 
-  }
   .title_services{
     font-size: 25px;
     margin-bottom: 30px;
@@ -1620,6 +1622,9 @@ html[dir="ltr"] .new .owl-carousel button.owl-dot,
 @media(max-width:767px){
   .google_map {
     height: 270px;
+  }
+  .gm-style .gm-style-iw {
+    display: none;
   }
 }
 /* ~~~~~~~~~~~~~~~end map~~~~~~~~~~~~~~~~~~~~~~ */
