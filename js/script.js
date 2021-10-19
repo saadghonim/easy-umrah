@@ -17,8 +17,8 @@ $(".fa-times").click(function(){
   $(".moboverlay ").trigger("click");
 
 });
-$("#ul_drop_").click(function(){
-  $(".ul_drop").slideToggle("500");
+$(".drop_down_menu").click(function(){
+  $(this).children().next().slideToggle("500")
 
 });
 $(".bt_lang").click(function(){
