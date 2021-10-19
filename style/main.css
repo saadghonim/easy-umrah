@@ -71,7 +71,7 @@ direction: ltr;
 
 body {
 font-family: "Tajawal";
-/* overflow-x: hidden; */
+
 }
 
 .ul_gh {
@@ -174,7 +174,7 @@ header{
 .ul_nav > li{
   margin-inline-end: 20px;
 }
-.ul_nav  li a{
+.ul_nav li a{
   font-size: 16px;
   font-family: "Tajawal";
   color: rgb(255, 255, 255);
@@ -185,13 +185,23 @@ header{
   -ms-transition: .5s;
   -o-transition: .5s;
   text-transform: capitalize;
+  display:inline-block ;
 }
-.ul_nav  li a:hover{
+.ul_nav li a:hover{
   color: rgb(226, 184, 37);
+  text-decoration: none;
 }
 
 .ul_nav li:nth-child(4){
   position: relative;
+}
+
+.ul_nav > li:nth-child(4) > a:after,
+.ul_nav > li:nth-child(5) > a:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  font-size: 10px;
+  font-weight: 900;
 }
 .ul_nav li:nth-child(4):hover .ul_drop {
   visibility: visible;
