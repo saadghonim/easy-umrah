@@ -41,7 +41,7 @@
             <a href="#" class="anc_gh anc_lang"> Malay</a>
           </div>
         </button>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times close_"></i>
         <ul class="ul_nav ul_gh">
           <li><a href="#">home</a></li>
           <li><a href="#"> about us</a></li>
@@ -89,11 +89,71 @@
         <button class="bt_user user_hover btn_gh">
           <i class="fas fa-user"></i>
           Login
-          <div class="drop_user">
-            <a href="#" class="anc_user anc_gh">  sign in</a>
-            <a href="#" class="anc_user anc_gh">  sign out</a>
-          </div>
         </button>
+        <div class="drop_user">
+
+          <i class="fas fa-times"></i>
+          <form class="sign_in">
+            <a href="#" class="logo_form">
+              <img src="images/logo-f.png">
+            </a>
+            <h1 class="m_p_gh">Login</h1>
+            <div class="form_group req">
+              <label for="fname">email address</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname"> password</label><br>
+            <input type="text" id="lname" name="lname">
+            </div>
+            <button class="btn_gh signin_">Login</button>
+            <div class="div_forgot_register">
+              <div>
+                <a href="#" id="signin_" class="forg">Forget Password?</a>
+              </div>
+              <div>
+                <span>New Customer? </span>
+                <a href="#" id="sign_up_" class="regi">Register</a>
+              </div>
+            </div>
+          </form>
+          <form class="forgot_">
+            <h1 class="m_p_gh">Forgot Your Password?</h1>
+            <div class="form_group req">
+              <label for="fname">email address</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <button class="btn_gh signin_">send</button>
+            <div class="sign_up_div">
+              <span>New Customer? </span>
+              <a href="#" id="signup_" class="regi"> Login</a>
+            </div>
+          </form>
+          <form class="sign_up">
+            <h1 class="m_p_gh">Sign Up</h1>
+            <div class="form_group req">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname"> e-mail</label><br>
+            <input type="text" id="lname" name="lname">
+            </div>
+            <div class="form_group">
+            <label for="fname">password</label><br>
+            <input type="text" id="fpss" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname">retype password</label><br>
+            <input type="text" id="rpass" name="lname">
+            </div>
+            <button class="btn_gh signin_">Continue</button>
+            <div class="sign_up_div">
+              <span>New Customer? </span>
+              <a href="#" id="signup_2" class="regi"> Login</a>
+            </div>
+          </form>
+        </div>
         <button class="bt_lang hover_lang btn_gh">
           <img src="images/ar.png">
           English 

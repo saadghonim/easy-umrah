@@ -8,12 +8,14 @@ $(".bt_bars").click(function(){
   $("body").addClass("over");
 });
 $(".moboverlay").click(function(){
-  $(".navbar_").toggle("500");
+  $(".navbar_").hide("500");
   $(".moboverlay").fadeOut(500);
   $("body").removeClass("over");
+  $(".drop_user").hide("500");
+
 
 });
-$(".fa-times").click(function(){
+$(".close_").click(function(){
   $(".moboverlay ").trigger("click");
 
 });
@@ -23,8 +25,39 @@ $(".drop_down_menu").click(function(){
 });
 $(".bt_lang").click(function(){
   $(".drop_lang").slideToggle("500");
-
 });
+/*~~~~~~~~~~~~~start form~~~~~~~~~~~~~`*/
+
+
+$(".user_hover").click(function(){
+  $(".drop_user").toggle("500");
+  $(".moboverlay").fadeIn(500);
+})
+$(".fa-times").click(function(){
+  $(".moboverlay").fadeOut(500);
+  $(".drop_user").hide("500");
+});
+$("#signin_").click(function(){
+  $(".sign_in").slideUp(300);
+  $(".forgot_").slideDown(300);
+})
+$("#sign_up_").click(function(){
+  $(".sign_in").slideUp(300);
+  $(".sign_up").slideDown(300);
+})
+$("#signup_2").click(function(){
+  $(".sign_in").slideDown(300);
+  $(".sign_up").slideUp(300);
+
+})
+$("#signup_").click(function(){
+  $(".sign_in").slideDown(300);
+  $(".forgot_").slideUp(300);
+
+})
+
+/*~~~~~~~~~~~~~end form~~~~~~~~~~~~~`*/
+
 /* ~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~ */
 
 

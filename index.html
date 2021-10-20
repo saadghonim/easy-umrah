@@ -30,7 +30,7 @@
         </a>
       </div>
       <div class="navbar_">
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times close_"></i>
                 <button class="bt_lang hover_lang btn_gh">
           <img src="images/ar.png">
           العربية 
@@ -90,11 +90,70 @@
         <button class="bt_user user_hover btn_gh">
           <i class="fas fa-user"></i>
           دخول
-          <div class="drop_user">
-            <a href="#" class="anc_user anc_gh"> تسجيل الدخول</a>
-            <a href="#" class="anc_user anc_gh">  تسجيل جديد</a>
-          </div>
         </button>
+        <div class="drop_user">
+          <i class="fas fa-times"></i>
+          <form class="sign_in">
+            <a href="#" class="logo_form">
+              <img src="images/logo-f.png">
+            </a>
+            <h1 class="m_p_gh">تسجيل الدخول</h1>
+            <div class="form_group req">
+              <label for="fname">البريد الإلكتروني</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname"> كلمه السر</label><br>
+            <input type="text" id="lname" name="lname">
+            </div>
+            <button class="btn_gh signin_">تسجيل الدخول</button>
+            <div class="div_forgot_register">
+              <div>
+                <a href="#" id="signin_" class="forg">هل نسيت كلمة السر؟</a>
+              </div>
+              <div>
+                <span>عميل جديد؟</span>
+                <a href="#" id="sign_up_" class="regi">تسجيل</a>
+              </div>
+            </div>
+          </form>
+          <form class="forgot_">
+            <h1 class="m_p_gh"> هل نسيت رقمك السري؟ </h1>
+            <div class="form_group req">
+              <label for="fname">البريد الإلكتروني</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <button class="btn_gh signin_">إرسال</button>
+            <div class="sign_up_div">
+              <span>عميل جديد؟</span>
+              <a href="#" id="signup_" class="regi"> تسجيل الدخول</a>
+            </div>
+          </form>
+          <form class="sign_up">
+            <h1 class="m_p_gh">اشتراك </h1>
+            <div class="form_group req">
+              <label for="fname">الاسم الأول</label><br>
+              <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname">البريد الإلكتروني</label><br>
+            <input type="text" id="lname" name="lname">
+            </div>
+            <div class="form_group">
+            <label for="fname">كلمه السر:</label><br>
+            <input type="text" id="fpss" name="fname"><br>
+            </div>
+            <div class="form_group">
+            <label for="lname">اعد ادخال كلمة المرور</label><br>
+            <input type="text" id="rpass" name="lname">
+            </div>
+            <button class="btn_gh signin_">استمر</button>
+            <div class="sign_up_div">
+              <span>عميل جديد؟</span>
+              <a href="#" id="signup_2" class="regi"> تسجيل الدخول</a>
+            </div>
+          </form>
+        </div>
         <button class="bt_lang hover_lang btn_gh">
           <img src="images/ar.png">
           العربية 

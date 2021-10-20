@@ -213,7 +213,6 @@ header{
   align-items: center;
   justify-content: flex-end;
 }
-
 .bt_user, .bt_lang {
   position: relative;
   font-size: 16px;
@@ -235,7 +234,7 @@ header{
 .bt_lang i{
   margin-inline-start: 5px;
 }
-.drop_user, .drop_lang, .ul_drop {
+.drop_lang, .ul_drop {
   visibility: hidden;
   opacity: 0;
   z-index: -1;
@@ -253,13 +252,11 @@ header{
   align-items: center;
   flex-direction: column;
 }
-.drop_user, .drop_lang{
+  .drop_lang{
   left: -39px;
 }
 html[dir="ltr"] .drop_lang {left:-7px}
 html[dir="rtl"] .drop_lang {left:-32px}
-html[dir="ltr"] .drop_user {left:-30px}
-html[dir="rtl"] .drop_user {left:-43px}
 .ul_drop{
   left: -48px;
   width: 160px;
@@ -289,7 +286,7 @@ html[dir="rtl"] .drop_user {left:-43px}
 .anc_lang:hover ,.anc_user:hover{
   color: rgb(226, 184, 37);
 }
-.drop_user::after ,.drop_lang::after ,.ul_drop::after{
+.drop_lang::after ,.ul_drop::after{
   content: '';
   display: block;
   width: 0;
@@ -304,7 +301,6 @@ html[dir="rtl"] .drop_user {left:-43px}
   transition: 0.3s;
   opacity: 1;
 }
-.drop_user .anc_user:first-child,
 .drop_lang .anc_user:first-child {
   margin-bottom: 5px;
 }
@@ -316,11 +312,6 @@ html[dir="rtl"] .drop_user {left:-43px}
 }
 .bt_user i{
   margin-inline-end: 5px;
-}
-.user_hover:hover .drop_user {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2;
 }
 .hover_lang:hover .drop_lang {
   visibility: visible;
@@ -348,8 +339,145 @@ html[dir="rtl"] .drop_user {left:-43px}
   color: rgb(226, 184, 37);
 
 }
+.drop_user{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff;
+  width: calc(100vw - 30px);
+  max-width: 400px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+}
+.drop_user form{
+  padding: 20px;
+}
+.forgot_, .sign_up{
+  display: none;
+}
+.drop_user h1{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Tajawal";
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform:capitalize;
+
+}
+.drop_user .fa-times{
+  position: absolute;
+  top: 20px;
+  display: block;
+  color: rgb(117, 117, 117);
+  cursor: pointer;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.drop_user .fa-times:hover{
+  color: #cc7237;
+}
+html[dir="rtl"] .drop_user .fa-times  {left: 20px;}
+html[dir="ltr"] .drop_user .fa-times {right: 20px;}
+.drop_user input{
+  width: 100%;
+  height: 40px;
+  padding:20px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: "Tajawal";
+  color: rgb(117, 117, 117);
+  font-weight: 500;
+  background-color: rgb(247, 247, 247);
+}
+.drop_user input:focus{
+  outline: 0;
+  border-color: #e3ba24;
+}
+.drop_user label{
+  font-size: 16px;
+  padding-inline-start: 20px;
+  text-transform: capitalize;
+}
+.drop_user .req label::after{
+  content: "*";
+  color:#f00;
+}
+
+.form_group{
+  margin-bottom: 5px;
+  text-align: start;
+}
+.drop_user .signin_{
+  font-size: 16px;
+  font-family: "Tajawal";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: linear-gradient( 500deg, rgb(204,114,55) 0%, rgb(227,186,36) 100%);
+  width: 100%;
+  height: 40px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
 .navbar_ .social-media{
   display: none;
+}
+.div_forgot_register{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.logo_form {
+  display: block;
+text-align: center;
+padding-bottom:20px;
+}
+.logo_form img{
+  width: 120px;
+}
+.div_forgot_register{
+  padding: 0 10px ;
+}
+.div_forgot_register .forg , .div_forgot_register .regi, .sign_up_div a{
+  font-size: 15px;
+  color: #cc7237;
+  text-decoration: revert;
+}
+.div_forgot_register span, .sign_up_div span{
+  color: rgb(51, 51, 51);
+  font-size: 15px;
+}
+.div_forgot_register a{
+  text-decoration:revert;
+}
+.sign_up .sign_up_div ,.forgot_ .sign_up_div {
+  text-align: center;
+}
+.drop_user .forgot_ h1{
+  font-size: 22px;
+  margin: 20px 0;
+}
+.sign_up h1{
+  margin: 20px 0;
 }
 @media(max-width:992px){
   .drop_lang{
@@ -383,14 +511,11 @@ html[dir="rtl"] .drop_user {left:-43px}
     left: 0;
   }
 
-  html[dir="rtl"] .drop_user {
-    left: -7px;
-  }
 
   .logo img{
     max-width: 85px;
   }
-  .drop_user::after ,.drop_lang::after ,.ul_drop::after{
+  .drop_lang::after ,.ul_drop::after{
     border: none;
   }
   .user_ .bt_lang{
@@ -406,9 +531,6 @@ html[dir="rtl"] .drop_user {left:-43px}
     color: rgb(56, 57, 57);
   }
 
-  .drop_user{
-    left: -12px;
-  }
   .bt_user:first-child {
     margin-inline-end: 10px;
 }
@@ -495,9 +617,7 @@ html[dir="ltr"] .fa-times{
 .anc_lang{
   display: block;
 }
-html[dir="ltr"] .drop_user{
-  left: -65px;
-}
+
 }
 /* ~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -1866,11 +1986,11 @@ footer .f_list {
   font-size: 15px;
   line-height: 3.273;
   font-weight: 900;
-  transition:.3s;
-  -moz-transition:.3s;
-  -ms-transition:.3s;
-  -o-transition:.3s;
-  -webkit-transition:.3s;
+  transition:.5s;
+  -moz-transition:.5s;
+  -ms-transition:.5s;
+  -o-transition:.5s;
+  -webkit-transition:.5s;
 }
 .down_f[aria-expanded="true"]:after {
   transform: rotate(
