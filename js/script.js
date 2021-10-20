@@ -37,6 +37,9 @@ $(".fa-times").click(function(){
   $(".moboverlay").fadeOut(500);
   $(".drop_user").hide("500");
 });
+$(".moboverlay").click(function(){
+  $(".drop_user").hide("500");
+})
 $("#signin_").click(function(){
   $(".sign_in").slideUp(300);
   $(".forgot_").slideDown(300);
