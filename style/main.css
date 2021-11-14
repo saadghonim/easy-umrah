@@ -1019,7 +1019,7 @@ html[dir="ltr"] .navbar_{
   }
   .input_search{
     min-width: 100%;
-    padding: 0 25px;
+    /* padding: 0 25px; */
   }
   html[dir="ltr"] .div_input i{
     right: 30px;
