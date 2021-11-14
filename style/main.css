@@ -894,12 +894,12 @@ html[dir="ltr"] .navbar_{
   -o-border-radius: 23.5px;
   padding: 0 30px;
   border: none;
-  width: 95%;
+  width: 100%;
 }
 .input_search:focus{
   outline: 0;
 }
-.bootstrap-select{
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
   width:95%;
   height: 47px;
   background-color: transparent;
