@@ -849,9 +849,7 @@ html[dir="ltr"] .fa-times{
   -webkit-justify-content: space-between;
   -webkit-align-items: center;
   align-items: center;
-
 }
-
 .div_input{
   width: 30%;
   text-align: start;
@@ -894,7 +892,7 @@ html[dir="ltr"] .navbar_{
   -o-border-radius: 23.5px;
   padding: 0 30px;
   border: none;
-  width: 100%;
+  /* width: 100%; */
 }
 .input_search:focus{
   outline: 0;
