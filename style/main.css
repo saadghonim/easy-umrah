@@ -843,10 +843,11 @@ html[dir="ltr"] .fa-times{
   padding-bottom: 20px;
 }
 .search_div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: -webkit-flex;
+  justify-content: -webkit-space-between;
+  align-items: -webkit-center;
 }
+
 .div_input{
   width: 30%;
   text-align: start;
