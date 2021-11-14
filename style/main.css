@@ -843,9 +843,13 @@ html[dir="ltr"] .fa-times{
   padding-bottom: 20px;
 }
 .search_div{
-  display: -webkit-flex;
-  justify-content: -webkit-space-between;
-  align-items: -webkit-center;
+  display: flex;
+  -webkit-display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+
 }
 
 .div_input{
@@ -1002,7 +1006,9 @@ html[dir="ltr"] .navbar_{
 @media(max-width:767px){
   .search_div{
     flex-direction: column;
+    -webkit-flex-direction: column;
   }
+
   .div_input{
     width: 85%;
     margin-bottom: 20px;
