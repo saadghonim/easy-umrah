@@ -1007,6 +1007,7 @@ html[dir="ltr"] .navbar_{
   .search_div{
     flex-direction: column;
     -webkit-flex-direction: column;
+    overflow: hidden;
   }
 
   .div_input{
