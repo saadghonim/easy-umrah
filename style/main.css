@@ -899,7 +899,7 @@ html[dir="ltr"] .navbar_{
 .input_search:focus{
   outline: 0;
 }
-.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+.bootstrap-select{
   width:95%;
   height: 47px;
   background-color: transparent;
@@ -933,12 +933,14 @@ html[dir="ltr"] .navbar_{
 }
 
 .bootstrap-select .dropdown-toggle .filter-option {
-  width: auto;
+  /* width: auto; */
   height: 100%;
   display: flex;
   align-items: center;
 }
-.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus{
+.btn-light:not(:disabled):not(.disabled).active:focus,
+  .btn-light:not(:disabled):not(.disabled):active:focus,
+  .show>.btn-light.dropdown-toggle:focus{
   outline: 0;
   border: none;
 }
