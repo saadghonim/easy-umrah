@@ -833,6 +833,10 @@ html[dir="ltr"] .fa-times{
   background-image: url("../images/search.png");
   background-size: cover;
   padding: 50px 0;
+  text-align: center;
+}
+.search_div {
+  margin-bottom: 30px;
 }
 .title_search{
   font-size: 26px;
@@ -842,16 +846,7 @@ html[dir="ltr"] .fa-times{
   text-align: center;
   padding-bottom: 20px;
 }
-.search_div{
-  display: flex;
-  -webkit-display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -webkit-align-items: center;
-  align-items: center;
-}
 .div_input{
-  width: 30%;
   text-align: start;
   position: relative;
 }
