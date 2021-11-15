@@ -140,7 +140,8 @@ function initMap() {
 $( function() {
   $( "#datepicker" ).datepicker();
   $( "#datepicker_" ).datepicker();
-
+  $( "#datepickere" ).datepicker();
+  $( "#datepicker_e" ).datepicker();
 } );
 
 } 
