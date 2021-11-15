@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/owl.carousel.min.css">
   <link rel="stylesheet" href="style/ticker.min.css">
+  <link rel="stylesheet" href="style/jquery-ui.min.css">
   <link rel="stylesheet" href="style/all.min.css">
   <link rel="stylesheet" href="style/all.css">
   <link rel="stylesheet" href="style/bootstrap.min.css">
@@ -199,11 +200,11 @@
     <h2 class="m_p_gh title_search">ابحث عن العرض المناسب</h2>
     <div class="search_div">
       <div class="div_input">
-        <input type="text" placeholder="موعد الوصول" class="input_search input_pickr">
+        <input type="text" id="datepicker" placeholder="موعد الوصول" class="input_search">
         <i class="far fa-calendar-alt"></i>
       </div>
       <div class="div_input">
-        <input type="text" placeholder="موعد المغادرة" class="input_search input_pickr">
+        <input type="text" id="datepicker_" placeholder="موعد المغادرة" class="input_search">
         <i class="far fa-calendar-alt"></i>
       </div>
       <div class="div_input">
@@ -825,7 +826,6 @@
 <!-- ~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
-
 <!-- ~~~~~~~~~~~~~~~start copyrights~~~~~~~~~~~~~~~~~~~~~~ -->
 <div class="container">
   <div class="copyrights">
@@ -849,6 +849,7 @@
 
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>

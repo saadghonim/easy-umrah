@@ -137,4 +137,10 @@ function initMap() {
 
 })
 
+$( function() {
+  $( "#datepicker" ).datepicker();
+  $( "#datepicker_" ).datepicker();
+
+} );
+
 } 
