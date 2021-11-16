@@ -94,16 +94,17 @@ $('.offers .owl-carousel').owlCarousel({
 
 /* ~~~~~~~~~~~~~~~end offers~~~~~~~~~~~~~~~~~~~~~~ */
 
-  $(".input_pickr").flatpickr();
-
-  $('.input_select').selectpicker();
-
   $(window).on( "load", function() {
     $(".preloader-sa").fadeOut();
   });
   
 
-
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#datepicker_" ).datepicker();
+    $( "#datepickere" ).datepicker();
+    $( "#datepicker_e" ).datepicker();
+  } );
   
 });
 
@@ -137,11 +138,7 @@ function initMap() {
 
 })
 
-$( function() {
-  $( "#datepicker" ).datepicker();
-  $( "#datepicker_" ).datepicker();
-  $( "#datepickere" ).datepicker();
-  $( "#datepicker_e" ).datepicker();
-} );
+
 
 } 
+
